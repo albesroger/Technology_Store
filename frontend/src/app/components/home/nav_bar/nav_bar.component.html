@@ -1,6 +1,87 @@
-<div class="w-full h-12 shadow-md flex items-center">
-  <div class="flex gap-1">
-    <img src="" alt="logo" />
+<div
+  class="w-full h-12 shadow-md flex items-center px-4 justify-between dark:bg-slate-500"
+>
+  <div class="flex gap-2 items-center">
+    <img src="assets/logo.png" alt="logo" class="h-10 w-10" />
     <p class="font-hunter text-2xl text-blue-700">TecnoStore</p>
+  </div>
+
+  <div class="relative flex h-16 items-center justify-between">
+    <!--Search bar-->
+    <div>
+      <form action="" class="relative w-max">
+        <input
+          type="search"
+          class="peer cursor-pointer relative z-10 h-8 w-8 rounded-full border border-blue-700 bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-blue-700 focus:pl-16 focus:pr-4 text-slate-700"
+        />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-blue-700 px-3.5 peer-focus:border-blue-700 peer-focus:stroke-blue-700"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+          />
+        </svg>
+      </form>
+    </div>
+
+    <!-- Menu -->
+    <div
+      class="flex items-center justify-center sm:items-stretch sm:justify-start"
+    >
+      <div class="hidden sm:ml-6 sm:block">
+        <div class="flex">
+          <a
+            href="#"
+            aria-current="page"
+            class="rounded-md font-hunter px-3 py-2 text-lg text-blue-700 hover:border-b-2"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="rounded-md font-hunter px-3 py-2 text-lg text-blue-700 hover:border-b-2"
+            >Products</a
+          >
+          <a
+            href="#"
+            class="rounded-md font-hunter px-3 py-2 text-lg text-blue-700 hover:border-b-2"
+            >Offers</a
+          >
+          <a
+            href="#"
+            class="rounded-md font-hunter px-3 py-2 text-lg text-blue-700 hover:border-b-2"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Icon -->
+    <div class="mr-2 ml-1 hover:scale-110 hover:rotate-10 transition-all">
+      <button>
+        <svg
+          fill="#000000"
+          width="32px"
+          height="32px"
+          viewBox="0 0 256 256"
+          id="Flat"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M216,64l-12.15674,66.8623A16,16,0,0,1,188.10156,144H62.54541L48,64Z"
+            opacity="0.2"
+          />
+          <path
+            d="M211.71387,132.29346l12.15722-66.86231A8.00076,8.00076,0,0,0,216,56H54.67676L49.793,29.13818A15.9918,15.9918,0,0,0,34.05078,16H16a8,8,0,0,0,0,16H34.05078L61.50586,183.00293A27.99252,27.99252,0,1,0,105.293,192H158.707A27.99678,27.99678,0,1,0,184,176H76.49512l-4.36377-24H188.10156A23.98711,23.98711,0,0,0,211.71387,132.29346ZM92,204a12,12,0,1,1-12-12A12.01343,12.01343,0,0,1,92,204Zm104,0a12,12,0,1,1-12-12A12.01343,12.01343,0,0,1,196,204ZM57.58594,72H206.41406l-10.44238,57.43164A7.99484,7.99484,0,0,1,188.10156,136H69.22266Z"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
