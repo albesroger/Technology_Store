@@ -2,13 +2,12 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'Hunter';
-    src: url('./assets/fonts/Hunters K-Pop.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Hunter";
+  src: url("/assets/fonts/Hunters K-Pop.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .font-hunter {
-  font-family: 'Hunter', sans-serif;
+  font-family: "Hunter", sans-serif;
 }
-
