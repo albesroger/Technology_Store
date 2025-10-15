@@ -1,13 +1,18 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/home/hero/home.component';
+import { HomeComponent } from '@components/home/hero/home.component';
+import { LayoutComponent } from '@components/layout/layout.component';
 
 export const routes: Routes = [
   {
-    path: '/home',
-    component: HomeComponent,
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path:'',
+        component:HomeComponent
+      }
+    
+    ],
   },
-  {
-    path: '**',
-    redirectTo: '/home',
-  },
+
 ];
