@@ -1,8 +1,26 @@
-<div class="w-full flex justify-center">
-  <div class="w-full h-150 bg-slate-200 flex justify-center">
-    <img src="assets/w4.png" alt="" class="w-350 h-150" />
+<div class="max-w-full flex justify-center">
+  <div class="w-full h-156 bg-slate-50 flex justify-center">
+    <img src="assets/w4.png" alt="" class="w-350 h-150 rounded-xl" />
   </div>
 </div>
-<div class="m-3 flex flex-row gap-5 mt-5 justify-center">
-  <app-tarjeta></app-tarjeta>
-</div>
+<section class="shadow-xl m-1 pb-3" id="ofertas">
+  <div class="flex justify-center pt-3">
+    <h3 class="text-5xl text-blue-600 font-serif">Ofertas</h3>
+  </div>
+
+  <div class="m-3 flex gap-5 mt-5 justify-center">
+    <app-tarjeta></app-tarjeta>
+  </div>
+
+  <div class="w-full flex justify-center">
+    <a
+      href=""
+      class="text-blue-500 font-semibold text-md hover:scale-110 hover:border-b-2 transition-transform duration-300"
+      >Ver más</a
+    >
+  </div>
+</section>
+
+<section id="product">
+  <app-product-section></app-product-section>
+</section>

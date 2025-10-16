@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { DecimalPipe } from '@angular/common';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-tarjeta',
