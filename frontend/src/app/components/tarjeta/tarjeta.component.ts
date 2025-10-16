@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-tarjeta',

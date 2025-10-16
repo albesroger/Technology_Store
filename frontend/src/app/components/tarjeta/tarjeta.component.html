@@ -4,10 +4,12 @@
     class="flex flex-col h-90 w-60 bg-slate-50 border-1 border-slate-300 rounded-xl space-y-3"
   >
     <div
-      class="flex justify-center border-b-1 rounded-xl border-slate-300 bg-white mx-1"
+      class="relative flex justify-center border-b-1 rounded-xl border-slate-300 bg-white mx-1"
     >
       @if (equipo.rebaja > 0) {
-      <div class="bg-red-600 h-8 w-32 flex items-center rounded-xl left-0">
+      <div
+        class="bg-red-600 h-8 w-12 flex items-center rounded-xl left-0 absolute"
+      >
         <p class="text-white px-2">%{{ equipo.rebaja }}</p>
       </div>
       }
@@ -24,7 +26,7 @@
     </div>
 
     <button
-      class="bg-red-600 rounded-xl mx-3 text-white py-1 flex items-center justify-center gap-2 hover:scale-105"
+      class="bg-red-600 rounded-xl mx-3 text-white py-1 flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300"
     >
       Añadir al carrito
       <svg
