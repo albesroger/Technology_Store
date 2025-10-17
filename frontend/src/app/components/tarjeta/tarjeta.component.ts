@@ -1,4 +1,5 @@
-import { Component, Input, input } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { ProductItem } from '@components/model/product.interface';
 
 @Component({
   selector: 'app-tarjeta',
@@ -6,36 +7,10 @@ import { Component, Input, input } from '@angular/core';
   templateUrl: './tarjeta.component.html',
 })
 export class TarjetaComponent {
-  equipo = {
-    img: '',
-    price: 0,
-    name: '',
-    description: '',
-    rebaja: 0,
-  };
+  
   constructor() {}
 
-  equipos = [
-    {
-      img: 'assets/microondas.webp',
-      price: 70,
-      name: 'Microondas',
-      description: 'Microondas bueno',
-      rebaja: 15,
-    },
-    {
-      img: 'assets/tele.jpg',
-      price: 120,
-      name: 'Televisor',
-      description: 'Televisor grande',
-      rebaja: 20,
-    },
-    {
-      img: 'assets/refri.jpg',
-      price: 240,
-      name: 'Refrigerador',
-      description: 'Refrigerador grande',
-      rebaja: 10,
-    },
-  ];
+  productArray = input<ProductItem[]>([]);
+
+  
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProductItem } from '@components/model/product.interface';
 import { TarjetaComponent } from "@components/tarjeta/tarjeta.component";
 
 @Component({
@@ -7,17 +8,39 @@ import { TarjetaComponent } from "@components/tarjeta/tarjeta.component";
   templateUrl: './productSection.component.html',
 })
 export class ProductSectionComponent {
-  equipo = {
-    img: '',
-    price: 0,
-    name: '',
-    description: '',
-    rebaja: 0,
-    categoria: '',
-  };
-
-  productos_Exist=[{
-
-  }]
+  equipos: ProductItem[] = [
+    {
+      photos: 'assets/microondas.webp',
+      price: 70,
+      name: 'Microondas',
+      description: 'Microondas bueno',
+      count: 15,
+      rebaja:0
+    },
+    {
+      photos: 'assets/tele.jpg',
+      price: 120,
+      name: 'Televisor',
+      description: 'Televisor grande',
+      count: 20,
+      rebaja:0
+    },
+    {
+      photos: 'assets/refri.jpg',
+      price: 240,
+      name: 'Refrigerador',
+      description: 'Refrigerador grande',
+      count: 20,
+      rebaja:0
+    },
+    {
+      photos: 'assets/refri.jpg',
+      price: 240,
+      name: 'Refrigerador',
+      description: 'Refrigerador grande',
+      count: 20,
+      rebaja:0
+    },
+  ];
 
 }
